@@ -3,19 +3,19 @@
     internal class Person
     {
         // Campos
-        public string name = String.Empty;
-        public int age;
+        public string Name { get; set; } = String.Empty;
+        public int Age { get; set; }
 
         // Método sem retorno
         public void Apresentation()
         {
-            Console.WriteLine($"Olá! Meu nome é {name} e eu tenho {age} anos.");
+            Console.WriteLine($"Olá! Meu nome é {Name} e eu tenho {Age} anos.");
         }
 
         // Método com retorno
         public string VerifyAge()
         {
-            return age >= 18 ? "Esta pessoa é maior de idade." : "Esta pessoa é menor de idade.";
+            return Age >= 18 ? "Esta pessoa é maior de idade." : "Esta pessoa é menor de idade.";
         }
     }
 }
