@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace Aula10.Good
+﻿namespace Aula10.Good
 {
     public enum EProductType
     {
@@ -10,7 +8,7 @@ namespace Aula10.Good
         Fashion = 4
     }
 
-    internal abstract class Discount
+    public abstract class Discount
     {
         public abstract decimal Calculate(decimal price);
     }
